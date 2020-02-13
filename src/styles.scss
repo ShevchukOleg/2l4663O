@@ -1,7 +1,94 @@
+// Reset styles
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div, p {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 // Fonts
 @font-face {
   font-family: "PT Sans";
   src: url(./assets/fonts/PTS-Bold.ttf) format("truetype");
   font-style: normal;
   font-weight: bold;
+}
+
+// Variavles
+$colP: 19px;
+// Main styles
+main {
+  background: #E5E5E5;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.colRightShift {
+  position: relative;
+  min-width: 360px;
+  padding: 0 $colP 0 154px;
+  p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080
+  }
+  .cite {
+    position: relative;
+    p {
+      padding: 10px 10px 11px 100px;
+      position: absolute;
+      top: 0;
+      left: -100px;
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      background: #FFFBC8;
+      border: 1px solid #DADADA;
+      border-radius: 5px;
+    }
+
+  }
+
+  }
+
+h1 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 2px;
 }
